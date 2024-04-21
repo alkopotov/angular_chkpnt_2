@@ -1,0 +1,15 @@
+.recipe-list{
+  display: flex;
+  gap: 215px;
+  overflow-x: auto;
+  width: calc(100% - 98px);
+}
+
+.sidebar-content-container {
+  display: flex;
+  gap: 30px;
+}
+.content-area {
+  width: 100%;
+  position: relative;
+}

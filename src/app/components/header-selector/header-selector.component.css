@@ -1,0 +1,19 @@
+.header-selector {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  height: 60px;
+}
+a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17.53px;
+  font-weight: 500;
+  line-height: 20.54px;
+  text-align: left;
+  color: #969696;
+}
+
+a.active {
+  color: #404040;
+}

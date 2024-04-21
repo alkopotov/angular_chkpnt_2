@@ -1,0 +1,14 @@
+<div class="sidebar-content-container">
+  <app-sidebar-selector></app-sidebar-selector>
+  <div class="content-area">
+    <app-header-selector></app-header-selector>
+    <section class="recipe-list">
+      @for (recipe of recipesListService.displayedRecipesList; track recipe.id) {
+        <app-recipe-card
+        [recipe]="recipe"></app-recipe-card>
+      }
+    </section>
+  </div>
+  </div>
+  
+

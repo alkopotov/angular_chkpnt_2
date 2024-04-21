@@ -1,0 +1,14 @@
+<ul class="sidebar-selector">
+  @for (category of recipesListService.categories; track $index) {
+    <li class="sidebar-selector__item">
+      <a 
+        [routerLink]="['/', category.toLowerCase(), recipesListService.difficulties[recipesListService.currentDifficulty].toLowerCase()]"
+        routerLinkActive="active"
+        (click)="recipesListService.currentCategory = $index"
+        >
+        <div>{{category}}</div>
+        <div class="link_marker" routerLinkActive="active"></div>
+      </a>
+    </li>
+  }
+  </ul>

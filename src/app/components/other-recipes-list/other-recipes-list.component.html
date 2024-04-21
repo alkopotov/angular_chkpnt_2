@@ -1,0 +1,14 @@
+<section class="other-recipes">
+  <h2>More recipes</h2>
+    @if (recipes.length > 0) {
+      <div class="other-recipes__list">
+        @for (recipe of recipes; track recipe.id) {
+          <div class="other-recipes__item" [routerLink]="['/recipe', recipe.id]">
+            <img [src]="recipe.image" alt="" class="other-recipes__image">
+            <h5 class="other-recipes__title">{{recipe.name}}</h5>
+            <p class="other-recipes__description">{{recipe.cookTimeMinutes}} min cook time</p>
+          </div>
+        }
+      </div>
+    }
+</section>

@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color:#F0F7FF;
+}
+h1{
+  font-family: 'Arima', cursive;
+  font-size: 44.24px;
+  font-weight: 800;
+  line-height: 72.25px;
+  text-align: left;
+
+}

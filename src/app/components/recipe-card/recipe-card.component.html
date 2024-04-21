@@ -1,0 +1,30 @@
+<div class="recipe-card">
+  <h2>{{recipe.name}}</h2>
+  <h3>Ingredients</h3>
+  <div class="recipe-card__ingredients">
+    @for (ingredient of recipe.ingredients; track $index) {
+      <p class="recipe-card__ingredient">{{ingredient}}</p>
+    }
+  </div>
+  <h3>Information</h3>
+  <div class="recipe-card__info">
+    <div class="recipe-card__info-item">
+      <h5 class="recipe-card__info-item-value">{{recipe.caloriesPerServing}}</h5>
+      <p class="recipe-card__info-item-description">Calories</p>
+    </div>
+    <div class="recipe-card__info-item">
+      <h5 class="recipe-card__info-item-value">{{recipe.rating}}</h5>
+      <p class="recipe-card__info-item-description">Rating</p>
+    </div>
+    <div class="recipe-card__info-item">
+      <h5 class="recipe-card__info-item-value">{{recipe.prepTimeMinutes}}</h5>
+      <p class="recipe-card__info-item-description">Prep time <br> minutes</p>
+    </div>
+    <div class="recipe-card__info-item">
+      <h5 class="recipe-card__info-item-value">{{recipe.cookTimeMinutes}}</h5>
+      <p class="recipe-card__info-item-description">Cook time <br>minutes</p>
+    </div>
+  </div>
+  <img src="{{recipe.image}}" alt="" class="recipe-card__image">
+  <button [routerLink]="['/recipe', recipe.id]">Recipe</button>
+</div>

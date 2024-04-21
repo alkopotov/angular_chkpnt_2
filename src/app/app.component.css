@@ -1,0 +1,23 @@
+
+.app-wrapper {
+  width: 100%;
+  max-width: 1300px;
+  background-color:#F0F7FF;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+  height: fit-content;
+  padding-left: 30px;
+  padding-bottom: 35px;
+  border: 5px solid white;
+  border-radius: 20px;
+}
+
+.sidebar-content-container {
+  display: flex;
+  gap: 30px;
+}
+.content-area {
+  width: 100%;
+  position: relative;
+}
